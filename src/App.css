@@ -1,0 +1,22 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.maindiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(https://t4.ftcdn.net/jpg/06/46/82/11/360_F_646821181_dtb6IAxuQETSiXHyGefKwtWkXJNDIZAr.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-y: hidden;
+}
+
+.form {
+  background: linear-gradient(135deg, #f9d423, #ff4e50);
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
