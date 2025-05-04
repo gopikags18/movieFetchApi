@@ -47,8 +47,8 @@ function App() {
         }}className="maindiv"
       >
         <div
-          style={{height:"920px", width: "650px", padding: "20px",  }}
-          className="form rounded bg-light"
+          style={{height:"935px", width: "650px", padding: "20px",  }}
+          className="form rounded bg-dark"
         >
           <div className="container mt-3">
 
@@ -90,29 +90,30 @@ function App() {
                 style={{marginTop:"20px",fontSize:"18px" }}
               >
                 <h2 style={{color:"darkblue"}}>{movie.Title}</h2>
-                <img
+                
+                <img className="img-fluid"
                   src={movie.Poster} alt=""
-                  width="150px"
-                  style={{ marginTop: "10px" }}
+                 
+                  style={{marginTop:"10px", width:"350px", height:"250px"}}
                 />
-                <p className="mt-3">Released: {movie.Released}</p>
+                <p className="mt-3"><span style={{color:"darkblue",fontSize:"20px"}}>Released: </span> {movie.Released}</p>
 
-                <p>Director: {movie.Director}</p>
-
-
-
-                <p>Writer: {movie.Writer}</p>
-
-                <p>Actors: {movie.Actors}</p>
-
-                <p>Language: {movie.Language}</p>
-
-                <p>Country:{movie.Country}</p>
+                <p><span style={{color:"darkblue",fontSize:"20px"}}>Director:</span> {movie.Director}</p>
 
 
-                <p>Awards: {movie.Awards}</p>
 
-                <p>Rating: {movie.imdbRating}</p>
+                <p><span style={{color:"darkblue",fontSize:"20px"}}>Writer: </span> {movie.Writer}</p>
+
+                <p> <span style={{color:"darkblue",fontSize:"20px"}}>Actors: </span> {movie.Actors}</p>
+
+                <p><span style={{color:"darkblue",fontSize:"20px"}}>Language: </span>{movie.Language}</p>
+
+                <p><span style={{color:"darkblue",fontSize:"20px"}}>Country: </span>{movie.Country}</p>
+
+
+                <p><span style={{color:"darkblue",fontSize:"20px"}}>Awards: </span> {movie.Awards}</p>
+ 
+                <p><span style={{color:"darkblue",fontSize:"20px"}}>Rating: </span> {movie.imdbRating}</p>
                 
               </div>
             )}
